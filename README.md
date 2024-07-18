@@ -13,9 +13,9 @@
 
 <p>For the program above to be compiled the following commands should be given: </p>
 
-gcc -Ofast -Wall -Wextra -Werror -pedantic -c -o complexlib.o complexlib.c
+<p>gcc -Ofast -Wall -Wextra -Werror -pedantic -c -o complexlib.o complexlib.c
 gcc -Ofast -Wall -Wextra -Werror -pedantic -c -o fractal.o fractal.c
-gcc -o fractal complexlib.o fractal.o -lm
+gcc -o fractal complexlib.o fractal.o -lm </p>
 
 Then for execution given a file input with the polynomial you should type: 
 
