@@ -9,6 +9,18 @@
 
 <p>Αυτή είναι η παρουσίαση της λύσης μας για την δεύτερη άσκηση της 4ης εργασίας στα πλαίσια του μαθήματος <i>Εισαγωγή στον Προγραμματισμό</i> του <i>Εθνικού και Καποδιστριακού Πανεπιστημίου Αθηνών.</i></p>
 
+<h3>Note</h3>
+
+<p>For the program above to be compiled the following commands should be given: </p>
+
+gcc -Ofast -Wall -Wextra -Werror -pedantic -c -o complexlib.o complexlib.c
+gcc -Ofast -Wall -Wextra -Werror -pedantic -c -o fractal.o fractal.c
+gcc -o fractal complexlib.o fractal.o -lm
+
+Then for execution given a file input with the polynomial you should type: 
+
+./fractal input -g output.bmp
+
 <h2>Τμήμα_1: Υλοποίηση βασικής αριθμητικής μιγαδικών</h2>
 <p>Πρωτού αναλύσουμε τις λειτουργίες του προγράμματος είναι σκόπιμο να περιγράψουμε το 
   βασικό struct που δομεί τον κώδικα, καθώς και τις συναρτήσεις που καθορίζουν την βασική αριθμητική μεταξύ των μιγαδικών οντοτήτων.
